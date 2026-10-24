@@ -1,0 +1,145 @@
+{
+    "meta": {
+        "name": "Nuclear facility",
+        "created": "2026-08-12T12:31:47",
+        "modified": "2026-09-29T18:58:04"
+    },
+    "global_inputs": {
+        "delay_uncertainty": "20",
+        "pd_uncertainty": "10",
+        "response_time": "250",
+        "alarm_probability": "0.98"
+    },
+    "paths": [
+        {
+            "name": "Path 1 - From gate 4A",
+            "tasks": [
+                {
+                    "name": "Gate",
+                    "pd": 0.6,
+                    "delay": 70.0
+                },
+                {
+                    "name": "Turnstile gate",
+                    "pd": 0.95,
+                    "delay": 19.0
+                },
+                {
+                    "name": "Walk to B block",
+                    "pd": 0.02,
+                    "delay": 267.0
+                },
+                {
+                    "name": "Gate",
+                    "pd": 0.9,
+                    "delay": 56.0
+                },
+                {
+                    "name": "Stairs",
+                    "pd": 0.7,
+                    "delay": 20.0
+                },
+                {
+                    "name": "WWalk to source room",
+                    "pd": 0.95,
+                    "delay": 18.0
+                },
+                {
+                    "name": "Sabotage source room",
+                    "pd": 0.9,
+                    "delay": 100.0
+                }
+            ]
+        },
+        {
+            "name": "Path 2 - From gate 2A (through E block)",
+            "tasks": [
+                {
+                    "name": "Gate",
+                    "pd": 0.6,
+                    "delay": 59.0
+                },
+                {
+                    "name": "Turnstile gate",
+                    "pd": 0.95,
+                    "delay": 15.0
+                },
+                {
+                    "name": "Walk to E3 block",
+                    "pd": 0.02,
+                    "delay": 100.0
+                },
+                {
+                    "name": "E2 gate",
+                    "pd": 0.7,
+                    "delay": 118.0
+                },
+                {
+                    "name": "Walk to B block",
+                    "pd": 0.02,
+                    "delay": 97.0
+                },
+                {
+                    "name": "Stairs - 2",
+                    "pd": 0.7,
+                    "delay": 29.0
+                },
+                {
+                    "name": "Walk to source room",
+                    "pd": 0.95,
+                    "delay": 25.0
+                },
+                {
+                    "name": "Sabotage source room",
+                    "pd": 0.9,
+                    "delay": 100.0
+                }
+            ]
+        },
+        {
+            "name": "Path 3 - From gate 2A (through palm tree area)",
+            "tasks": [
+                {
+                    "name": "Gate",
+                    "pd": 0.6,
+                    "delay": 59.0
+                },
+                {
+                    "name": "Turnstile gate",
+                    "pd": 0.95,
+                    "delay": 15.0
+                },
+                {
+                    "name": "Walk to palm tree area",
+                    "pd": 0.02,
+                    "delay": 95.0
+                },
+                {
+                    "name": "Walk to D block",
+                    "pd": 0.02,
+                    "delay": 70.0
+                },
+                {
+                    "name": "Gate",
+                    "pd": 0.9,
+                    "delay": 38.0
+                },
+                {
+                    "name": "Stairs",
+                    "pd": 0.7,
+                    "delay": 19.0
+                },
+                {
+                    "name": "Walk to source room",
+                    "pd": 0.95,
+                    "delay": 18.0
+                },
+                {
+                    "name": "Sabotage source room",
+                    "pd": 0.9,
+                    "delay": 100.0
+                }
+            ]
+        }
+    ]
+}
